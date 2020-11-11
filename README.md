@@ -22,7 +22,7 @@ optional arguments:
 To run it against your own logs, you'll have to modify the regex in the script to match your own log format.
 
 Just keep the following named capture groups :
-* `ts` - the timestamp
+* `ts` - the timestamp (which is expected to be an ISO8601 formatted date, if that's not the case modify line 43 accordingly)
 * `remote_addr` - the client ip
 * `status` - the HTTP status code
 * `duration` - the request duration in seconds
